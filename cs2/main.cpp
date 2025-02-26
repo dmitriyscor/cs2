@@ -1,14 +1,23 @@
-//
-//  main.cpp
-//  cs2
-//
-//  Created by Dmytro Gozha on 1/23/25.
-//
-
+//Dmytro G
 #include <iostream>
+#include <cmath>
+#include <string>
+#include <vector>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+#include "Searches/Searches.hpp"
+#include "Sortings/Sortings.hpp"
+#include "Pointers/Pointers.hpp"
+
+
+using namespace std;
+
+
+
+int main()
+{
+    
+    
     return 0;
 }
+
+
