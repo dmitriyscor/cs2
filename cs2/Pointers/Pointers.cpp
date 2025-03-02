@@ -37,3 +37,22 @@ int* setInteger()
     cin >> *tInt;
     return tInt;
 }
+
+
+
+//=================unique_ptr===================
+
+//unique_ptr<int> ptr;
+//ptr = unique_ptr<int>(new int(10));
+//
+//int* ptr2;
+//ptr2 = new int(20);
+//
+//
+//cout << *ptr << endl;
+//cout << *ptr2 << endl;
+//
+//
+//delete ptr2;
+
+//================================================
