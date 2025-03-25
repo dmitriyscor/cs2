@@ -11,7 +11,7 @@
 #include "Classes/Regular/CarClass.hpp"
 #include "Classes/Regular/Employee.hpp"
 #include "Classes/Friend/Server.hpp"
-
+#include "Classes/Class_copy/Gradebook.hpp"
 
 using namespace std;
 
@@ -20,10 +20,19 @@ using namespace std;
 
 int main()
 {
-    Player p1("Player_Name", 100, "8-800-555-3555");
-    Admin dmitriiyyyy(".dmitriiyyyy");
+    Gradebook student1(001, "Alex", 5);
     
-    dmitriiyyyy.printPlayerInfo(p1);
+    student1.printInfo();
+    cout << endl;
+    
+    double * newGrades = new double[5]{1,2,3,4,5};
+    student1.setGrades(newGrades, 5);
+    
+    student1.printInfo();
+    cout << endl;
+    
+    Gradebook student2(student1);
+    student2.printInfo();
 
     return 0;
 }
