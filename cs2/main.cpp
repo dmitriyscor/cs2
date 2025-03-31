@@ -12,27 +12,34 @@
 #include "Classes/Regular/Employee.hpp"
 #include "Classes/Friend/Server.hpp"
 #include "Classes/Class_copy/Gradebook.hpp"
+#include "Classes/OperatorOverloading/Documentation.hpp"
 
 using namespace std;
 
 
-
-
 int main()
 {
-    Gradebook student1(001, "Alex", 5);
+    PersonalDocument p1("Alex", "15 years old, was born in Eastern Europe. Phone number is unknowm.");
+    PersonalDocument p2(p1);
+    PersonalDocument *p3 = new PersonalDocument(p1);
+    PersonalDocument p4("Peter", "Peter does not exist.");
     
-    student1.printInfo();
-    cout << endl;
+    cout << p1 << endl;
+    cout << p2 << endl;
+    cout << *p3 << endl;
+    cout << p4 << endl;
     
-    double * newGrades = new double[5]{1,2,3,4,5};
-    student1.setGrades(newGrades, 5);
+    if(p1==p4)
+    {
+        cout << "Cool" << endl;
+    }
+    else
+    {
+        cout << "Not cool" << endl;
+    }
     
-    student1.printInfo();
-    cout << endl;
     
-    Gradebook student2(student1);
-    student2.printInfo();
+    delete p3;
 
     return 0;
 }
