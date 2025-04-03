@@ -18,14 +18,16 @@ class PersonalDocument
 {
     string name;
     string info;
+    double AIDetectionScore;
     
 public:
-    PersonalDocument(string, string);
+    PersonalDocument(string, string,double);
     PersonalDocument(const PersonalDocument&);
     
     friend std::ostream& operator<<(std::ostream& os, const PersonalDocument&);
     bool operator==(const PersonalDocument&) const;
-    
+    operator double() const;
+    operator string() const;
     
 };
 

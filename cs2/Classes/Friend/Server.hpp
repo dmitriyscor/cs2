@@ -14,9 +14,12 @@ public:
     Admin(string n);
     void printPlayerInfo(const Player& p);
     void healPlayer(Player& p);
+    
+    string getUsername() const;
 };
 
-class Player {
+class Player
+{
 private:
     string name;
     int health;
@@ -24,6 +27,10 @@ private:
 
 public:
     Player(string n, int h, string p);
+    
+    string getName() const;
+    string getPassword() const;
+    int getHealth() const;
 
     friend class Admin; // Admin can access private members
 };
