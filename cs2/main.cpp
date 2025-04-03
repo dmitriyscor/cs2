@@ -10,26 +10,21 @@
 #include "Pointers/Pointers.hpp"
 #include "Classes/Regular/CarClass.hpp"
 #include "Classes/Regular/Employee.hpp"
-
+#include "Classes/Friend/Server.hpp"
+#include "Classes/Class_copy/Gradebook.hpp"
+#include "Classes/OperatorOverloading/Documentation.hpp"
+#include "Classes/Composition/GameServer.hpp"
 
 using namespace std;
+
 
 
 int main()
 {
     
-    //create three employee objects with specified data
-    Employee SM("Susan Meyers", 47899, "Marketing", "Sales Rep");
-    Employee MJ("Mark Jones", 39119, "IT", "Programmer");
-    Employee JR("Joy Rogers", 81774, "Manufacturing", "Engineer");
-    //run print function for each employee
-    cout << setw(15) << "Name" << setw(15) << "ID" << setw(25) << "Department" << setw(15) << "Position" << endl;
 
-    SM.printInfo(); cout << "\n";
-    MJ.printInfo(); cout << "\n";
-    JR.printInfo(); cout << "\n";
+
     
     
-
     return 0;
 }
