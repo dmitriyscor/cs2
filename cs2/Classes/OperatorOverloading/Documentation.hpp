@@ -26,6 +26,7 @@ public:
     
     friend std::ostream& operator<<(std::ostream& os, const PersonalDocument&);
     bool operator==(const PersonalDocument&) const;
+    
     operator double() const;
     operator string() const;
     
